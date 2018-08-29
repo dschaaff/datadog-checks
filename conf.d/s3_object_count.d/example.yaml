@@ -1,0 +1,9 @@
+init_config:
+
+instances:
+  # this will monitor s3://example-logs/data/production/event-log/<year>/<month>/<day>
+  - bucket: example-logs
+    prefix: data/production/event-log
+    tags:
+      - 'env:production'
+      - 'log:event-log'
